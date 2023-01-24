@@ -16,13 +16,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d3b4782b95.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
 
     <!-- this is header part -->
     <header>
-      <nav class="max-w-6xl mx-auto">
+      <nav class="max-w-6xl mx-auto bg-white">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -32,7 +33,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
               </label>
-              <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <ul tabindex="0" class=" menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Cases</a></li>
@@ -44,14 +45,27 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Cases</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Home  <i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Services <i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Contact <i class="fa-solid fa-chevron-right"></i></a></li>
           </div>
+          
           <div class="navbar-end">
-            <a class="btn bg-yellow-700 opacity-60 border-0">Free Consultation</a>
+
+            <label for="my-modal-5" class="btn bg-yellow-700 opacity-60 border-0">Free Consultation</label>
+          </div>
+        </div>
+        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="font-bold text-lg">Congratulation!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Amazon for free!
+            </p>
+            <div class="modal-action">
+              <label for="my-modal-5" class="btn">Heyyyy!</label>
+            </div>
           </div>
         </div>
       </nav>
